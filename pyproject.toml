@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "blocks-game"
+version = "0.1.0"
+description = ""
+authors = ["Fabián Meléndez"]
+readme = "README.md"
+packages = [{include = "blocks_game"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pygame = "^2.5.0"
+
+[tool.poetry.scripts]
+blocks-game = "blocks_game.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
